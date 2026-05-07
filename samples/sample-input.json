@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "obs-status-dependency-log-diagnostics",
+    "title": "配信状態・依存関係・ログ診断"
+  },
+  "items": [
+    {
+      "id": "obs-status-dependency-log-diagnostics-happy",
+      "title": "配信状態・依存関係・ログ診断 happy",
+      "status": "ready",
+      "tags": [
+        "obsstreaming"
+      ],
+      "obsScene": "Main",
+      "sourceName": "Camera",
+      "logPath": "logs/obs.log",
+      "expectedState": "ready",
+      "recoveryHint": "配信状態・依存関係・ログ診断 の確認観点"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "rank": 63,
+  "domain": "OBSStreaming",
+  "ideaNo": 1,
+  "ideaName": "配信状態・依存関係・ログ診断",
+  "repository": "obs-status-dependency-log-diagnostics",
+  "publish": "GitHub Release / BOOTH",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/OBSStreaming/created_idea_001_obs-status-dependency-log-diagnostics",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/OBSStreaming/created_idea_001_obs-status-dependency-log-diagnostics/idea_001_obs-status-dependency-log-diagnostics.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "OBSStreaming",
+    "no": 1,
+    "platform": "OBSStreaming",
+    "field": "状態可視化・診断",
+    "integration": "",
+    "idea": "配信状態・依存関係・ログ診断",
+    "overview": "配信状態、シーン依存、設定履歴、ログ、エラー原因候補を1つのダッシュボードで確認する。",
+    "problem": "配信不調時に、シーン構成、ログ、設定、原因候補を別々に探す必要がある。",
+    "similar": "OBS Studio, Streamlabs, XSplit, Grafana",
+    "diff": "配信中や録画前に見るべき状態と修復候補を同じパネルに出す。",
+    "parent": "Plugins",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "obs-status-dependency-log-diagnostics",
+    "repositoryTitle": "obs-status-dependency-log-diagnostics",
+    "zipFile": "idea_001_obs-status-dependency-log-diagnostics.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}
