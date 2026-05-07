@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "配信状態・依存関係・ログ診断 の正常入力を検証する",
+    "items": [
+      {
+        "id": "obs-status-dependency-log-diagnostics-happy",
+        "title": "配信状態・依存関係・ログ診断 happy",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "obsScene": "Main",
+        "sourceName": "Camera",
+        "logPath": "logs/obs.log",
+        "expectedState": "ready",
+        "recoveryHint": "配信状態・依存関係・ログ診断 の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "obs-status-dependency-log-diagnostics-missing",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "obsScene": "Main",
+        "sourceName": "Camera",
+        "logPath": "logs/obs.log",
+        "expectedState": "ready",
+        "recoveryHint": "配信状態・依存関係・ログ診断 の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "obs-status-dependency-log-diagnostics-warning",
+        "title": "配信状態・依存関係・ログ診断 warning",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "obsScene": "Main",
+        "sourceName": "Camera",
+        "logPath": "logs/obs.log",
+        "expectedState": "ready"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "obs-status-dependency-log-diagnostics-happy",
+        "title": "配信状態・依存関係・ログ診断 happy",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "obsScene": "Main",
+        "sourceName": "Camera",
+        "logPath": "logs/obs.log",
+        "expectedState": "ready",
+        "recoveryHint": "配信状態・依存関係・ログ診断 の確認観点"
+      },
+      {
+        "id": "obs-status-dependency-log-diagnostics-missing",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "obsScene": "Main",
+        "sourceName": "Camera",
+        "logPath": "logs/obs.log",
+        "expectedState": "ready",
+        "recoveryHint": "配信状態・依存関係・ログ診断 の確認観点"
+      },
+      {
+        "id": "obs-status-dependency-log-diagnostics-warning",
+        "title": "配信状態・依存関係・ログ診断 warning",
+        "status": "ready",
+        "tags": [
+          "obsstreaming"
+        ],
+        "obsScene": "Main",
+        "sourceName": "Camera",
+        "logPath": "logs/obs.log",
+        "expectedState": "ready"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]
