@@ -1,0 +1,11 @@
+{
+  "product": "obs-status-dependency-log-diagnostics",
+  "title": "配信状態・依存関係・ログ診断",
+  "domain": "OBSStreaming",
+  "ideaNo": 1,
+  "platformType": "obs-workflow-tool",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
